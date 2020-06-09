@@ -1,0 +1,26 @@
+debug: false
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://35.221.199.19:3306/nhatro?useSSL=false
+    username: root
+    password: trong123Aa@
+    jpa:
+      hibernate.ddl-auto: update
+      generate-ddl: true
+      show-sql: true
+  server:
+    port: 9004
+  application:
+    name: auth
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/
+logging:
+  config: config/log4j2.xml
